@@ -1,0 +1,49 @@
+:root {
+    --primary-bg-color: rgb(60, 153, 147);
+    --primary-text-color: rgb(41, 56, 50);
+    --nav-bg-color: rgb(60, 129, 153);
+    --produkt-bg-color: rgb(60, 129, 153);
+    --border-color: rgb(60, 99, 153);
+}
+
+
+body{
+    margin:0;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+body a{
+    color: var(--primary-text-color);
+}
+nav{
+    width: 90%;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--nav-bg-color);
+    margin-left: 5%;
+    margin-top: 2vh;
+    height: 13vh;
+    font-size: 5vh;
+    align-items: center;
+    border-radius: 25px;
+}
+nav a{
+    transition: font-size 0.15s ;
+}
+
+nav a:hover{
+    font-size:6vh
+}
+#produkterdiv{
+    display:flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+#produktdiv{
+    background-color: var(--produkt-bg-color);
+    width: 40%;
+    padding: 1vh;
+    border: 4px;
+    border-color: var(--border-color);
+    border-style: dashed;
+}
