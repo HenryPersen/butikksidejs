@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Iceberg';
+    src: url("static/fonts/Iceberg-Regular.ttf");
+}
+
+
 :root {
     --primary-bg-color: rgb(60, 153, 147);
     --primary-text-color: rgb(41, 56, 50);
+    --primary-text-color-lighter: rgb(62, 84, 76);
     --nav-bg-color: rgb(60, 129, 153);
     --produkt-bg-color: rgb(60, 129, 153);
     --border-color: rgb(60, 99, 153);
@@ -8,7 +15,8 @@
 
 
 body{
-    margin:0;
+    font-family: 'Iceberg';
+    margin:15px;
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
@@ -28,11 +36,13 @@ nav{
     border-radius: 25px;
 }
 nav a{
-    transition: font-size 0.15s ;
+    color: var(--primary-text-color);
+    transition: font-size 0.15s, color 0.2s;
 }
 
 nav a:hover{
-    font-size:6vh
+    font-size:6vh;
+    color: var(--primary-text-color-lighter);
 }
 #produkterdiv{
     display:flex;
@@ -46,4 +56,9 @@ nav a:hover{
     border: 4px;
     border-color: var(--border-color);
     border-style: dashed;
+}
+#content{
+    display:flex;
+    align-items: center;
+    flex-flow: column;
 }
