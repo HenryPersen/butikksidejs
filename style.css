@@ -48,6 +48,7 @@ nav a:hover{
     display:flex;
     justify-content: space-evenly;
     height: 100%;
+    flex-wrap: wrap;
 }
 #produktdiv{
     background-color: var(--produkt-bg-color);
@@ -56,6 +57,7 @@ nav a:hover{
     border: 4px;
     border-color: var(--border-color);
     border-style: dashed;
+    margin: 2vh;
 }
 #content{
     display:flex;
